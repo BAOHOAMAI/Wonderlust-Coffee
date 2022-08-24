@@ -89,6 +89,13 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Quicksand', sans-serif;
     font-weight:300
 }
+
+/* Home - About section */
+.story-text {
+    font-family: 'Inspiration', cursive;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
 .about-narrow {
 	display: block;
 	position: absolute;
@@ -113,9 +120,51 @@ body::-webkit-scrollbar-thumb:hover {
 	transform: translateX(0%);
 	transition: transform 0.5s;
 }
-img {
+
+/* Home - Space section */
+.img-slider .slider {
+    clip-path: circle(0% at 0 50%) ;
+}
+.img-slider .slider.active {
+    clip-path: circle(150% at 0 50%) ;
+    transition: 1.5s;
+    transition-property: clip-path;
+}
+.img-slider .slider img {
     display: block;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+}
+.img-slider .navigation .btn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+.img-slider .navigation .btn.active {
+    background-color: #6c7c69;
+}
+/* Home-Menu */
+.menu-text {
+    font-family: 'Inspiration', cursive;
+    letter-spacing:5px;
+}
+.btn-link::after , .btn-link::before {
+    border: 3px solid #6c7c69;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+}
+.btn-link:hover::after {
+    transform:translate(-5px , -5px);
+}
+.btn-link:hover::before {
+    transform:translate(5px , 5px);
 }
