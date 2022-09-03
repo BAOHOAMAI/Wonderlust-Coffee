@@ -47,3 +47,18 @@ var repeat = function(activeClass) {
     repeater();
 }
 repeat();
+
+// Home Video  
+
+let btn = document.querySelector('.play-btn');
+let modal = document.querySelector('.overlay');
+let video = document.querySelector('video');
+let closeBtn = document.querySelector('.close-btn');
+
+btn.addEventListener('click', () => {
+    modal.classList.add('active');
+    video.currentTime= 0;
+});
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+})
