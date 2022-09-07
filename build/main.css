@@ -197,6 +197,7 @@ body::-webkit-scrollbar-thumb:hover {
     bottom: 0;
     z-index: 1000;
     display: none;
+    transform: scale(0);
 }
 .overlay-container {
     width: 100%;
@@ -205,9 +206,12 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     align-items: center;
 }
-.active {
+.overlay.open {
     display: block;
+    transition: all 0.3s;
+    transform: scale(1);
 }
+
 .overlay video {
     max-width: 700px;
     outline:none;
@@ -221,10 +225,6 @@ body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
     color:#fff ;
 }
-/* .blog-title {
-    font-family: 'Inspiration', cursive;
-
-} */
 .contact-link:hover {
     color: #6c7c69;
 }
