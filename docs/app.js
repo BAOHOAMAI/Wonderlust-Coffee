@@ -62,3 +62,44 @@ var repeat = function(activeClass) {
     repeater();
 }
 repeat();
+
+// IMG GSAP
+
+gsap.registerPlugin(ScrollTrigger);
+
+let masks = document.querySelectorAll('.mask');
+
+masks.forEach (mask => {
+    let image = mask.querySelector('img');
+
+    let tl = gsap.timeline({
+        scrollTrigger : {
+            trigger : mask,
+            toggleActions : "restart none none reset"
+        }
+    });
+
+    tl.set (mask, {autoAlpha: 1});
+
+    tl.from (mask, 7, {
+        xPercent : -100,
+        ease: Power2.out
+    })
+
+    
+    tl.from (image, 7, {
+        xPercent : 100,
+        scale: 1.3,
+        delay: -7,
+        ease: Power2.out
+    })
+});
+
+
+let tl = gsap.timeline();
+
+tl.to ('.text-demo', { y:"0%" , duration:1 , delay :1, opacity:1},1);
+tl.fromTo ('.img1', { y:40,opacity:0},{y:0, duration:1 , delay :1, opacity:1},1);
+tl.fromTo ('.paragraph-demo', {opacity:0} , {opacity:1 , duration:.5},3);
+tl.fromTo ('.img2', {opacity:0} , {opacity:1 , duration:.5},3);
+tl.fromTo ('.about', {opacity:0} , {opacity:1 , duration:.5},3);
