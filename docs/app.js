@@ -81,16 +81,16 @@ masks.forEach (mask => {
 
     tl.set (mask, {autoAlpha: 1});
 
-    tl.from (mask, 7, {
-        xPercent : -100,
+    tl.from (mask, 5, {
+        yPercent : -100,
         ease: Power2.out
     })
 
     
-    tl.from (image, 7, {
-        xPercent : 100,
+    tl.from (image, 5, {
+        yPercent : 100,
         scale: 1.3,
-        delay: -7,
+        delay: -5,
         ease: Power2.out
     })
 });

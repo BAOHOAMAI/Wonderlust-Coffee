@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+.about-description {
+    font-family: 'Quicksand', sans-serif;
+    line-height:40px;
+    padding-right: 30px;
+    text-align: justify;
+}
+.about-brand {
+    font-family: 'Inspiration', cursive;
+
+}
+.about-description span {
+    color:#6c7c69;
+    font-weight: bold;
+}
+.about-container {
+    padding: 0 150px;
+    margin-bottom: 100px;
+}
