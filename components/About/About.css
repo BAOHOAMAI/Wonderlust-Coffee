@@ -19,3 +19,50 @@
     padding: 0 150px;
     margin-bottom: 100px;
 }
+
+.about-history {
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    margin: 0 20px;
+    background-color: rgb(255, 255, 255);
+    cursor: grabbing;
+}
+.history-list {
+    display:grid;
+    grid-template-columns: repeat(6 ,320px);
+    margin-bottom:150px;
+    position: relative;
+    left: 0;
+    pointer-events: none;
+}
+.history-item {
+    text-align: center;
+}
+.history-img img {
+    margin: 0 auto;
+}
+.history-title {
+    font-size:20px;
+    color: #6c7c69;
+}
+.history-des {
+    font-family: 'Quicksand', sans-serif;
+    font-size:14px;
+    padding: 10px 0;
+}
+.history-date {
+    font-family: 'Inspiration', cursive;
+    font-size:24px;
+    letter-spacing:3px;
+    color: #6c7c69;
+}
+.history-le {
+    margin-top:110px;
+}
+.history-chan {
+    margin-top:117px;
+}
+.square-img {
+    margin-top:97px;
+}

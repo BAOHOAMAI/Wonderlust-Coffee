@@ -1,3 +1,4 @@
+
 // Home Video  
 
 let btn = document.querySelector('.play-btn');
@@ -103,3 +104,4 @@ tl.fromTo ('.img1', { y:40,opacity:0},{y:0, duration:1 , delay :1, opacity:1},1)
 tl.fromTo ('.paragraph-demo', {opacity:0} , {opacity:1 , duration:.5},3);
 tl.fromTo ('.img2', {opacity:0} , {opacity:1 , duration:.5},3);
 tl.fromTo ('.about', {opacity:0} , {opacity:1 , duration:.5},3);
+
