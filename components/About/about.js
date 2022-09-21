@@ -1,3 +1,4 @@
+// Image Draggable Slider
 
 const container = document.querySelector('.about-history');
 const list = document.querySelector('.history-list');
@@ -9,9 +10,6 @@ container.addEventListener('mousedown', (e) => {
     isPressedDown = true;
     cursorXSpace = e.offsetX - list.offsetLeft;
     console.log(list.offsetLeft);
-});
-
-container.addEventListener('mouseup', () => {
 });
 
 window.addEventListener('mouseup', () => {
@@ -37,7 +35,7 @@ function boundList() {
 }
 
 
-// MouseMove
+//  Drag MouseMove 
 let mouseCursor = document.querySelector('.cursor');
 container.addEventListener('mousemove' , cursor);
 

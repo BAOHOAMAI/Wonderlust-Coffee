@@ -179,7 +179,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .overlay {
     position:fixed;
-    background-color:#6c7c69;
+    background-color:black;
     top: 0;
     left: 0;
     right: 0;
@@ -202,7 +202,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .overlay video {
-    max-width: 700px;
+    width: 100%;
+    height: 100%;
     outline:none;
     border-radius: 10px;
 }
@@ -213,6 +214,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 40px;
     cursor: pointer;
     color:#fff ;
+    z-index: 100;
 }
 .contact-link:hover {
     color: #6c7c69;

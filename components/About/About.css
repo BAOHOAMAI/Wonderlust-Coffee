@@ -47,11 +47,11 @@
 }
 .history-list {
     display:grid;
-    grid-template-columns: repeat(8 ,320px);
+    grid-template-columns: repeat(10,320px);
     position: relative;
     left: 0;
     pointer-events: none;
-    width: 170%;
+    width: 210%;
 }
 .history-item {
     text-align: center;
