@@ -8,6 +8,8 @@
 }
 html {
     font-family: 'Caviar Dreams', arial !important ;
+    overflow-x: hidden;
+    scroll-behavior:smooth ;
 }
 body::-webkit-scrollbar {
 	width: 8px;

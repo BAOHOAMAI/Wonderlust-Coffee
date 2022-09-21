@@ -8,11 +8,10 @@ let cursorXSpace;
 container.addEventListener('mousedown', (e) => {
     isPressedDown = true;
     cursorXSpace = e.offsetX - list.offsetLeft;
-    container.style.cursor = 'grabbing';
+    console.log(list.offsetLeft);
 });
 
 container.addEventListener('mouseup', () => {
-    container.style.cursor = 'grab';
 });
 
 window.addEventListener('mouseup', () => {
@@ -31,11 +30,25 @@ function boundList() {
     const list_rect = list.getBoundingClientRect();
 
     if (parseInt(list.style.left) > 0) {
-        list.style.left = 0 ;
+        list.style.left = '0px' ;
     } else if (list_rect.right < container_rect.right) {
         list.style.left = `-${list_rect.width - container_rect.width}px`;
-    }
-    console.log(list_rect.right);
-    console.log(container_rect.right);
+    } 
 }
 
+
+// MouseMove
+let mouseCursor = document.querySelector('.cursor');
+container.addEventListener('mousemove' , cursor);
+
+function cursor(e) {
+    container.style.cursor = 'none';
+    mouseCursor.style.display = 'block';
+    mouseCursor.style.top = e.offsetY + 'px';
+    mouseCursor.style.left = e.offsetX + 'px';
+}
+
+container.addEventListener('mouseleave', (e) => {
+    mouseCursor.style.display = 'none'
+
+})
