@@ -10,6 +10,7 @@ html {
     font-family: 'Caviar Dreams', arial !important ;
     overflow-x: hidden;
     scroll-behavior:smooth ;
+    /* background-color: #EBEBEB !important; */
 }
 body::-webkit-scrollbar {
 	width: 8px;
@@ -25,7 +26,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* Slide Home  */
 .mainImg_Box {
-    height: 745px;
+    height: 850px;
     overflow: hidden;
     position: relative;
     width: 100%;
